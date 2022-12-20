@@ -11,7 +11,7 @@ document.title = name+" - "+album;
 var bitrate = document.getElementById('saavn-bitrate');
 var bitrate_i = bitrate.options[bitrate.selectedIndex].value;
 var quality = "";
-if (bitrate_i == 4) {quality = 320} else {quality = 160;}
+if (bitrate_i == 4) {quality = 320} else {quality = 128;}
 
 
     document.getElementById("player-name").innerHTML = name;
@@ -32,7 +32,7 @@ var goButton = document.getElementById("search-trigger");
             goButton.click();
     
 }
-var DOWNLOAD_API = "https://semantic-genni-sathishskinsta.koyeb.app/"
+var DOWNLOAD_API = "https://skmp3server.sathishsk.repl.co"
 function AddDownload(id) {
     var bitrate = document.getElementById('saavn-bitrate');
     var bitrate_i = bitrate.options[bitrate.selectedIndex].value;
