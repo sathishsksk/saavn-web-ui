@@ -11,11 +11,7 @@ document.title = name+" - "+album;
 var bitrate = document.getElementById('saavn-bitrate');
 var bitrate_i = bitrate.options[bitrate.selectedIndex].value;
 var quality = "";
-if (bitrate_i == 3) {quality = 160} else {quality = 320;}
 if (bitrate_i == 4) {quality = 320} else {quality = 320;}
-if (bitrate_i == 2) {quality = 96} else {quality = 320;}    
-if (bitrate_i == 1) {quality = 48} else {quality = 320;}
-if (bitrate_i == 5) {quality = 128} else {quality = 320;}  
     
     document.getElementById("player-name").innerHTML = name;
         document.getElementById("player-album").innerHTML = album;
